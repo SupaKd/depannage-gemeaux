@@ -1,0 +1,208 @@
+.apropos {
+
+    .apropos__hero {
+        text-align: center;
+        padding: 4rem 1rem;
+        margin-top: 1rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("clef.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        p {
+            max-width: 500px;
+            font-size: 1.4rem;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #fff;
+        }
+        
+        .apropos__buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            
+            button {
+                background-color: #2a3f58;
+                border: 1px solid #fff;
+                padding: 1.3rem 2rem;
+                border-radius: 0.5rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                cursor: pointer;
+                
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+                
+                &:hover {
+                    background-color: #bf2432;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 4rem;
+            }
+            
+            p {
+                font-size: 1.6rem;
+                max-width: 900px;
+            }
+        }
+    }
+    
+    .apropos__content {
+        display: flex;
+        flex-direction: column; // mobile : colonne
+        gap: 2rem;
+        padding: 2rem 1rem;
+        align-items: center;
+        
+        &__text {
+            text-align: center; // mobile
+        }
+        
+        &__image {
+            text-align: center;
+            
+            img {
+                max-width: 250px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        
+      
+
+        
+        // Desktop / tablette
+        @media (min-width: 768px) {
+            flex-direction: row; // texte à gauche, image à droite
+            align-items: flex-start;
+            
+            &__text {
+                flex: 2;
+                text-align: left; // texte aligné à gauche
+                padding-right: 2rem;
+            }
+            
+            &__image {
+                flex: 1;
+                text-align: right;
+            }
+            
+            &__buttons {
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+    }
+    
+  .apropos-section1,
+  .apropos-section2 {
+    display: flex;
+    flex-direction: column; // mobile : texte au-dessus de l'image
+    gap: 2rem;
+    margin:2rem 0;
+    padding: 2rem 1rem;
+    align-items: center;
+  
+    &__text {
+      text-align: center;
+  
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #2a3f58;
+      }
+  
+      p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+      }
+    }
+  
+    &__image {
+      text-align: center;
+  
+      img {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__buttons {
+        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 2rem;
+        
+        button {
+            background-color: #2a3f58;
+            border: 1px solid #fff;
+            padding: 1.3rem 2rem;
+            border-radius: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            
+            &:hover {
+                background-color: #bf2432;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
+    
+  
+    // Desktop / tablette
+    @media (min-width: 768px) {
+      flex-direction: row; // texte à gauche, image à droite
+      align-items: center;
+      justify-content: space-between;
+  
+      &__text {
+        flex: 1;
+        text-align: start;
+        padding-right: 2rem;
+      }
+  
+      &__image {
+        flex: 1;
+        text-align:center;
+      }
+      iframe {
+        max-width: 50%;
+        border-radius: 4rem;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
