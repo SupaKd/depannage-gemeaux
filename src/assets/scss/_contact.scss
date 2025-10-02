@@ -4,7 +4,7 @@
     padding: 4rem 1rem;
     margin-top: 1rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("contact_hero.jpg");
+      url("/contact_hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,12 +14,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: start;
+    text-align: center;
 
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
       color: #fff;
+      border-bottom: #bf2432 3px solid;
+
     }
 
     p {
@@ -59,15 +61,14 @@
     }
     @media (min-width: 768px) {
       h1 {
-          font-size: 4rem;
+        font-size: 4rem;
       }
-      
-      p {
-          font-size: 1.6rem;
-          max-width: 900px;
 
+      p {
+        font-size: 1.6rem;
+        max-width: 900px;
       }
-  }
+    }
   }
 
   .contact_info {
@@ -102,16 +103,8 @@
       margin-bottom: 1.5rem;
       text-align: center;
       color: #2a3f58;
-    }
-    .phone_btn {
-      background-color: #2a3f58;
-      padding: 1rem;
-      border: solid 1px #fff;
-      font-size: 1.5rem;
-      color: #fff;
-      text-align: center;
-      margin-bottom: 3rem;
-      border-radius: 0.5rem;
+      font-size: 3rem;
+      border-bottom: #bf2432 3px solid;
     }
 
     form {
@@ -124,12 +117,14 @@
         display: flex;
         flex-direction: column;
         font-weight: 500;
+        color: #2a3f58;
       }
 
       input,
       select,
       textarea {
         padding: 0.6rem;
+        margin: 0.5rem 0;
         border: 1px solid #ddd;
         border-radius: 0.5rem;
       }
@@ -162,6 +157,7 @@
 
         &:hover {
           background: #2a3f58;
+          transition: all 0.3s ease;
         }
       }
     }
@@ -178,7 +174,7 @@
       border-radius: 4rem;
       padding: 1rem;
     }
-    p{
+    p {
       margin: 2rem 0;
       font-size: 1.2rem;
     }
@@ -204,6 +200,13 @@
       }
       .contact2 {
         width: 50%;
+      }
+    }
+    .contact_map {
+      iframe {
+        max-width: 50%;
+        border-radius: 4rem;
+        padding: 1rem;
       }
     }
   }

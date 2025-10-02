@@ -23,7 +23,7 @@ function Footer() {
         <div className="footer__section">
           <h3 className="footer__title">Informations</h3>
           <NavLink to="/tarifs" className={({ isActive }) => isActive ? "footer__link active" : "footer__link"}>Nos Tarifs</NavLink>
-          <NavLink to="/a-propos" className={({ isActive }) => isActive ? "footer__link active" : "footer__link"}>Qui sommes-nous ?</NavLink>
+          <NavLink to="/apropos" className={({ isActive }) => isActive ? "footer__link active" : "footer__link"}>Qui sommes-nous ?</NavLink>
           <NavLink to="/contact" className={({ isActive }) => isActive ? "footer__link active" : "footer__link"}>Contact</NavLink>
         </div>
 
