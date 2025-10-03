@@ -1,0 +1,205 @@
+.tarifs {
+  // Section hero
+  .hero_tarifs {
+    text-align: center;
+    padding: 4rem 1rem;
+    margin-top: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/tarifs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #bf2432;
+      color: #fff;
+    }
+
+    p {
+      max-width: 500px;
+      font-size: 1.4rem;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .hero_buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+
+      button {
+        background-color: #2a3f58;
+        border: 1px solid #fff;
+        padding: 1.3rem 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &:hover {
+          background-color: #bf2432;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        max-width: 900px;
+      }
+    }
+  }
+
+  // Section tarifs
+  .tarifs-section1,
+  .tarifs-section2 {
+    display: flex;
+    flex-direction: column; // mobile
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+    align-items: center;
+
+    &__text {
+      text-align: center;
+
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        color: #2a3f58;
+        border-bottom: 3px solid #bf2432;
+        display: inline-block;
+      }
+
+      p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      ul {
+        list-style: disc;
+        margin: 1rem 0 0 1.5rem;
+        text-align: start;
+
+        li {
+          font-size: 1.3rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    &__image {
+      text-align: center;
+
+      img {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+
+      button {
+        background-color: #2a3f58;
+        border: 1px solid #fff;
+        padding: 1.3rem 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &:hover {
+          background-color: #bf2432;
+        }
+      }
+    }
+
+    // Desktop
+    @media (min-width: 768px) {
+      flex-direction: row; // texte à gauche, image à droite
+      justify-content: space-between;
+      align-items: center;
+
+      &__text {
+        flex: 1;
+        text-align: left;
+        padding: 2rem;
+        h2 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+
+      &__image {
+        flex: 1;
+      }
+
+      &__buttons {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+
+  .tarifs_info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 600;
+  
+    .tarifs1,
+    .tarifs3 {
+      background-color: #bf2432;
+      width: 100%;
+      padding: 4rem;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+  
+    .tarifs2 {
+      background-color: #2a3f58;
+      width: 100%;
+      padding: 4rem;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+  
+    @media (min-width: 768px) {
+      flex-direction: row; // corrige ici
+    }
+  }
+  
+}

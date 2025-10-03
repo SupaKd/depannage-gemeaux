@@ -114,6 +114,14 @@ header {
     z-index: 10;
   }
 
+  .tel_header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2A3F58;
+    margin-top: 1.3rem;
+    color:#BF2432;
+  }
+
   // ===== Desktop =====
   @media screen and (min-width: 768px) {
     padding: 0rem 2rem;
@@ -187,6 +195,9 @@ header {
           }
         }
       }
+    }
+    .tel_header {
+      display: none;
     }
   }
 }

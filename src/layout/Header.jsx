@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBarsStaggered, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBarsStaggered, faXmark, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +21,6 @@ function Header() {
       >
         <FontAwesomeIcon icon={isOpen ? faXmark : faBarsStaggered} />
       </button>
-
       {/* Logo */}
       <Link to="/" onClick={closeMenu} className="logo_mobile">
         <img src="/logo.svg" alt="Logo" />
@@ -30,7 +29,6 @@ function Header() {
       <Link to="/" onClick={closeMenu} className="logo_desktop">
         <img src="/logo.svg" alt="Logo" />
       </Link>
-
       {/* Navigation */}
       <nav className={`header__nav ${isOpen ? "show" : ""}`}>
         {/* Bouton fermer */}
@@ -42,7 +40,7 @@ function Header() {
           <FontAwesomeIcon icon={faXmark} />
         </button>
 
-      <img src="/logo.svg" alt="logo" />
+        <img src="/logo.svg" alt="logo" />
         <NavLink
           to="/"
           onClick={closeMenu}
@@ -86,9 +84,11 @@ function Header() {
           Contact
         </NavLink>
       </nav>
-
       {/* Overlay */}
       {isOpen && <div className="overlay" onClick={closeMenu}></div>}
+      <div className="tel_header">
+        <a href="tel:+33769697279"><FontAwesomeIcon icon={faPhoneFlip} /></a>
+      </div>{" "}
     </header>
   );
 }
