@@ -1,0 +1,38 @@
+.contact_info {
+  display: flex;
+  flex-direction: column; // mobile par défaut
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 600;
+
+  .contact1,
+  .contact3 {
+    background-color: #bf2432;
+    width: 100%;
+    padding: 4rem;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  .contact2 {
+    background-color: #2a3f58;
+    width: 100%;
+    padding: 4rem;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+}
+
+// Desktop
+@media screen and (min-width: 768px) {
+  .contact_info {
+    flex-direction: row; // passe en row
+  }
+
+  .contact1,
+  .contact2,
+  .contact3 {
+    width: 33.33%; // partage équitable
+    font-size: 2rem;
+  }
+}

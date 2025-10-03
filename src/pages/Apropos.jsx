@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import AvisSlider from "../components/AvisSlider";
+ 
 
 function Apropos() {
   return (
@@ -44,8 +46,12 @@ function Apropos() {
             professionnalisme et transparence.
           </p>
           <div className="apropos-section1__buttons">
-            <button><NavLink to="/tarifs">Consultez nos tarifs</NavLink></button>
-            <button><NavLink to="/contact">Contactez-nous</NavLink></button>
+            <button>
+              <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
+            </button>
+            <button>
+              <NavLink to="/contact">Contactez-nous</NavLink>
+            </button>
           </div>
         </div>
         <div className="apropos-section1__image">
@@ -54,7 +60,7 @@ function Apropos() {
       </section>
 
       <section className="apropos-section2">
-      <iframe
+        <iframe
           title="Carte Côtes-d’Armor"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d848344.2231873756!2d-3.4481625592126135!3d48.46489246512948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4811e20ef1c28d1d%3A0x30ca5cd36df26c0!2sC%C3%B4tes-d&#39;Armor!5e1!3m2!1sfr!2sfr!4v1759435870885!5m2!1sfr!2sfr"
           width="100%"
@@ -86,11 +92,22 @@ function Apropos() {
             vous méritez.
           </p>
           <div className="apropos-section2__buttons">
-            <button><NavLink to="/tarifs">Consultez nos tarifs</NavLink></button>
-            <button><NavLink to="/contact">Contactez-nous</NavLink></button>
+            <button>
+              <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
+            </button>
+            <button>
+              <NavLink to="/contact">Contactez-nous</NavLink>
+            </button>
           </div>
         </div>
       </section>
+      <section>
+        < AvisSlider />
+      </section>
+      <p>
+        Artisan enregistré à la chambre des métiers et de l’artisanat de
+        Bretagne. Fournitures et main d’œuvre garanties 10 ans.
+      </p>
     </main>
   );
 }

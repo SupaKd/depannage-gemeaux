@@ -5,6 +5,7 @@ import Mentions from "../pages/Mentions";
 import Contact from "../pages/Contact";
 import Apropos from "../pages/Apropos";
 import Tarifs from "../pages/Tarifs";
+import Serrurerie from "../pages/Serrurerie";
 function AppRoutes() {
   const location = useLocation();
 
@@ -15,6 +16,7 @@ function AppRoutes() {
         <Route path="/mentions" element={<Mentions />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/tarifs" element={<Tarifs />} />
+        <Route path="/serrurerie" element={<Serrurerie />} />
       </Routes>
   );
 }

@@ -114,6 +114,7 @@
         max-width: 400px;
         width: 100%;
         height: auto;
+        border-radius: 1rem;
       }
     }
 
@@ -172,7 +173,12 @@
     }
   }
 
-
+  .legal{
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
   .tarifs_info {
     display: flex;
     flex-direction: column;
@@ -198,8 +204,7 @@
     }
   
     @media (min-width: 768px) {
-      flex-direction: row; // corrige ici
+      flex-direction: row; 
     }
   }
-  
 }

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faBolt } from "@fortawesome/free-solid-svg-icons";
+import AvisSlider from "../components/AvisSlider";
+import Bando from "../components/Bando";
 function Tarifs() {
   return (
     <main className="tarifs">
@@ -56,17 +56,8 @@ function Tarifs() {
         </div>
       </section>
 
-      <section className="tarifs_info">
-        <div className="tarifs1">
-          <FontAwesomeIcon icon={faBolt} /> Intervention rapide
-        </div>
-        <div className="tarifs2">
-          <a href="tel:+33769697279">07 69 69 72 79</a>
-        </div>
-        <div className="tarifs3">
-          <FontAwesomeIcon icon={faCheck} /> Devis gratuit
-        </div>
-      </section>
+      
+      <Bando />
 
       <section className="tarifs-section1">
         <div className="tarifs-section1__image">
@@ -139,6 +130,13 @@ function Tarifs() {
           </div>
         </div>
       </section>
+      <section>
+        < AvisSlider />
+      </section>
+      <p className="legal">
+        Artisan enregistré à la chambre des métiers et de l’artisanat de
+        Bretagne. Fournitures et main d’œuvre garanties 10 ans.
+      </p>
     </main>
   );
 }

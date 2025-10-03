@@ -1,5 +1,5 @@
-.apropos {
-  .apropos__hero {
+.home {
+  .home__hero {
     text-align: center;
     padding: 4rem 1rem;
     margin-top: 1rem;
@@ -31,7 +31,7 @@
       color: #fff;
     }
 
-    .apropos__buttons {
+    .home__buttons {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -41,7 +41,7 @@
       button {
         background-color: #2a3f58;
         border: 1px solid #fff;
-        padding: 1.3rem 2rem;
+        padding: 1.5rem 4rem;
         border-radius: 0.5rem;
         font-size: 1.5rem;
         font-weight: 500;
@@ -69,53 +69,91 @@
       }
     }
   }
+  .heroDepannage {
+    background-color: #2a3f58;
+    padding: 4rem 2rem;
+    color: #fff;
 
-  .apropos__content {
-    display: flex;
-    flex-direction: column; // mobile : colonne
-    gap: 2rem;
-    padding: 2rem 1rem;
-    align-items: center;
+    &__content {
+      display: flex;
+      flex-direction: column; // mobile
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding:3rem 1rem;
 
-    &__text {
-      text-align: center; // mobile
-    }
-
-    &__image {
-      text-align: center;
-
-      img {
-        max-width: 250px;
-        width: 100%;
-        height: auto;
+      @media screen and (min-width: 992px) {
+        flex-direction: row; // desktop
+        justify-content: space-between;
+        align-items: center;
       }
     }
 
-    // Desktop / tablette
-    @media (min-width: 768px) {
-      flex-direction: row; // texte à gauche, image à droite
-      align-items: flex-start;
+    &__left {
+      flex: 2;
 
-      &__text {
-        flex: 2;
-        text-align: left; // texte aligné à gauche
-        padding-right: 2rem;
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color:#fff;
       }
 
-      &__image {
-        flex: 1;
-        text-align: right;
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        max-width: 500px;
       }
+    }
 
-      &__buttons {
-        flex-direction: row;
+    &__btn {
+      background-color: #bf2432;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1.5rem 4rem;
+      border: 1px solid #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: darken(#bf2432, 10%);
+      }
+    }
+
+    &__right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .heroDepannage__info {
+        display: flex;
+        align-items: center;
         gap: 1rem;
+
+        .icon {
+          font-size: 2rem;
+          color: #fff;
+        }
+
+        h3 {
+          font-size: 2.5rem;
+          font-weight: 600;
+          color:#bf2432;
+        }
+
+        p {
+          font-size: 1.2rem;
+          opacity: 0.9;
+          color:#fff;
+        }
       }
     }
   }
-
-  .apropos-section1,
-  .apropos-section2 {
+  .home-section1,
+  .home-section2 {
     display: flex;
     flex-direction: column; // mobile : texte au-dessus de l'image
     gap: 2rem;
@@ -124,11 +162,11 @@
     align-items: center;
 
     &__text {
-      text-align: center;
+      text-align: start;
 
       h2 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
         color: #2a3f58;
         border-bottom: #bf2432 3px solid;
       }
@@ -146,6 +184,7 @@
         max-width: 400px;
         width: 100%;
         height: auto;
+        border-radius: 1rem;
       }
     }
     &__buttons {
@@ -182,6 +221,9 @@
       align-items: center;
       justify-content: space-between;
 
+      h2 {
+        font-size: 3.5rem;
+      }
       &__text {
         flex: 1;
         text-align: start;
@@ -192,16 +234,18 @@
         flex: 1;
         text-align: center;
       }
-      iframe {
-        max-width: 50%;
-        border-radius: 4rem;
-        padding: 1rem;
-      }
     }
   }
-  p {
+  .home-section2__text p {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    text-align: start;
+  }
+  .artisan {
     margin: 2rem 0;
     font-size: 1.2rem;
     text-align: center;
+    color: #2a3f58;
   }
+
 }

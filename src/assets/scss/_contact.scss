@@ -21,7 +21,6 @@
       margin-bottom: 1rem;
       color: #fff;
       border-bottom: #bf2432 3px solid;
-
     }
 
     p {
@@ -71,29 +70,7 @@
     }
   }
 
-  .contact_info {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    text-align: center;
-    font-weight: 600;
-
-    .contact1,
-    .contact3 {
-      background-color: #bf2432;
-      width: 100%;
-      padding: 4rem;
-      font-size: 2.5rem;
-      color: #fff;
-    }
-    .contact2 {
-      background-color: #2a3f58;
-      width: 100%;
-      padding: 4rem;
-      font-size: 2.5rem;
-      color: #fff;
-    }
-  }
+  
 
   .contact_form {
     max-width: 600px;
@@ -191,22 +168,17 @@
         font-size: 1.6rem;
       }
     }
-    .contact_info {
-      flex-direction: row;
-      .contact1,
-      .contact3 {
-        width: 50%;
-        font-size: 2rem;
-      }
-      .contact2 {
-        width: 50%;
-      }
-    }
+    
     .contact_map {
       iframe {
         max-width: 50%;
         border-radius: 4rem;
         padding: 1rem;
+      }
+      p {
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        text-align: center;
       }
     }
   }

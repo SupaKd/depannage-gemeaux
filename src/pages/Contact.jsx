@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faCheck, faBolt } from "@fortawesome/free-solid-svg-icons";
+import Bando from "../components/Bando";
 function Contact() {
   return (
     <main className="contact">
@@ -22,17 +21,7 @@ function Contact() {
         </div>
       </section>
 
-      {/* INFOS RAPIDES */}
-      <section className="contact_info">
-        <div className="contact1"><FontAwesomeIcon icon={faBolt} /> Intervention rapide</div>
-        <div className="contact2">
-          <a href="tel:+33769697279">
-          07 69 69 72 79</a>
-        </div>
-        <div className="contact3"><FontAwesomeIcon icon={faCheck} /> Devis gratuit</div>
-      </section>
-
-      {/* FORMULAIRE */}
+      <Bando />
       <section className="contact_form">
         <h2>Parlons de votre projet...</h2>
 
