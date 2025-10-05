@@ -23,14 +23,14 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       margin-bottom: 1rem;
       color: #fff;
       border-bottom: 3px solid #bf2432;
     }
 
     p {
-      max-width: 500px;
+      max-width: 300px;
       font-size: 1.4rem;
       margin: 0 auto;
       line-height: 1.6;
@@ -47,7 +47,7 @@
       button {
         background-color: #2a3f58;
         border: 1px solid #fff;
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 3rem;
         border-radius: 0.5rem;
         font-size: 1.5rem;
         font-weight: 500;
@@ -56,6 +56,7 @@
         a {
           color: #fff;
           text-decoration: none;
+          letter-spacing: 0.5px;
         }
 
         &:hover {
@@ -67,12 +68,12 @@
 
     @media (min-width: 768px) {
       h1 {
-        font-size: 4rem;
+        font-size: 5rem;
       }
 
       p {
         font-size: 1.6rem;
-        max-width: 900px;
+        max-width: 700px;
       }
     }
   }
@@ -106,6 +107,9 @@
         font-weight: 700;
         margin-bottom: 1rem;
         color: #fff;
+        @media (min-width: 768px) {
+          font-size: 5rem;
+        }
       }
 
       p {
@@ -151,6 +155,10 @@
           font-size: 2.2rem;
           font-weight: 600;
           color: #bf2432;
+         
+          @media (min-width: 768px) {
+            font-size: 3rem;
+          }
         }
 
         p {
@@ -195,6 +203,9 @@
         margin-bottom: 2rem;
         color: #2a3f58;
         border-bottom: 3px solid #bf2432;
+        @media (min-width: 768px) {
+          font-size: 4rem;
+        }
       }
 
       p {
@@ -212,15 +223,15 @@
         button {
           background-color: #2a3f58;
           border: 1px solid #fff;
-          padding: 1.3rem 2rem;
+          padding: 1rem 1.5rem;
           border-radius: 0.5rem;
-          font-size: 1.5rem;
-          font-weight: 500;
+          font-size: 1.4rem;
           cursor: pointer;
 
           a {
             color: #fff;
             text-decoration: none;
+            font-size: 1.5rem;
           }
 
           &:hover {
@@ -277,6 +288,9 @@
         margin-bottom: 2rem;
         color: #2a3f58;
         border-bottom: 3px solid #bf2432;
+        @media (min-width: 768px) {
+          font-size: 4rem;
+        }
       }
 
       p {
@@ -294,15 +308,15 @@
         button {
           background-color: #2a3f58;
           border: 1px solid #fff;
-          padding: 1.3rem 2rem;
+          padding: 1rem 1.5rem;
           border-radius: 0.5rem;
-          font-size: 1.5rem;
-          font-weight: 500;
+          font-size: 1.4rem;
           cursor: pointer;
 
           a {
             color: #fff;
             text-decoration: none;
+            font-size: 1.5rem;
           }
 
           &:hover {

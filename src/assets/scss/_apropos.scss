@@ -24,7 +24,7 @@
     }
 
     p {
-      max-width: 500px;
+      max-width: 300px;
       font-size: 1.4rem;
       margin: 0 auto;
       line-height: 1.6;
@@ -65,7 +65,7 @@
 
       p {
         font-size: 1.6rem;
-        max-width: 900px;
+        max-width: 700px;
       }
     }
   }
@@ -146,6 +146,10 @@
         margin-bottom: 2rem;
         color: #2a3f58;
         border-bottom: 3px solid #bf2432;
+        
+        @media (min-width: 768px) {
+          font-size: 3.5rem;
+        }
       }
 
       p {
@@ -226,6 +230,9 @@
         margin-bottom: 2rem;
         color: #2a3f58;
         border-bottom: 3px solid #bf2432;
+        @media (min-width: 768px) {
+          font-size: 3rem;
+        }
       }
 
       p {
@@ -252,6 +259,8 @@
           a {
             color: #fff;
             text-decoration: none;
+            letter-spacing: 0.5px;
+
           }
 
           &:hover {

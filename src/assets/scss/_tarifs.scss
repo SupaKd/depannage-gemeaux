@@ -36,19 +36,18 @@
       margin-top: 2rem;
 
       button {
-        background-color: #2a3f58;
-        border: 1px solid #fff;
-        padding: 1.3rem 2rem;
-        border-radius: 0.5rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+          background-color: #2a3f58;
+          border: 1px solid #fff;
+          padding: 1rem 1.5rem;
+          border-radius: 0.5rem;
+          font-size: 1.4rem;
+          cursor: pointer;
 
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+          }
 
         &:hover {
           background-color: #bf2432;
@@ -96,10 +95,13 @@
       flex: 1;
 
       h2 {
-        font-size: 2.3rem;
+        font-size: 2.6rem;
         margin-bottom: 2rem;
         color: #2a3f58;
         border-bottom: 3px solid #bf2432;
+        @media (min-width: 768px) {
+          font-size: 3.8rem;
+        }
       }
 
       p {
@@ -190,6 +192,9 @@
         margin-bottom: 2rem;
         color: #2a3f58;
         border-bottom: 3px solid #bf2432;
+        @media (min-width: 768px) {
+          font-size: 3.8rem;
+        }
       }
 
       p {
