@@ -68,143 +68,191 @@
     }
   }
 
-  // Section tarifs
-  .tarifs-section1,
-  .tarifs-section2 {
-    display: flex;
-    flex-direction: column; // mobile
-    gap: 2rem;
-    margin: 2rem 0rem;
-    padding: 2rem 1rem;
-    align-items: center;
+  .tarifs-section1 {
+    padding: 4rem 2rem;
+    background-color: #fff;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: center;
+    }
 
     &__text {
-      text-align: center;
+      text-align: start;
+      flex: 1;
 
       h2 {
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
         color: #2a3f58;
         border-bottom: 3px solid #bf2432;
-        display: inline-block;
       }
 
       p {
         font-size: 1.3rem;
         line-height: 1.6;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
 
-      ul {
-        list-style: disc;
-        margin: 1rem 0 0 1.5rem;
-        text-align: start;
+      ul{
+        list-style-type: disc;
+        margin-left: 2rem;
+        font-size: 1.3rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
 
-        li {
-          font-size: 1.3rem;
-          margin-bottom: 0.5rem;
+      .tarifs-section1__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        button {
+          background-color: #2a3f58;
+          border: 1px solid #fff;
+          padding: 1.3rem 2rem;
+          border-radius: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 500;
+          cursor: pointer;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+
+          &:hover {
+            background-color: #bf2432;
+            transition: all 0.3s ease;
+          }
         }
       }
     }
 
     &__image {
+      flex: 1;
       text-align: center;
 
       img {
-        max-width: 400px;
+        max-width: 350px;
         width: 100%;
         height: auto;
         border-radius: 1rem;
       }
     }
+  }
 
-    &__buttons {
+  /* ---------------- SECTION 2 ---------------- */
+  .tarifs-section2 {
+    padding: 4rem 2rem;
+    background-color: #fff;
+
+    &__wrapper {
       display: flex;
-      gap: 2rem;
+      flex-direction: column;
       justify-content: center;
-      margin-top: 2rem;
+      gap: 2rem;
 
-      button {
-        background-color: #2a3f58;
-        border: 1px solid #fff;
-        padding: 1.3rem 2rem;
-        border-radius: 0.5rem;
-        font-size: 1.5rem;
-        font-weight: 500;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+      }
+    }
 
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
+    &__content {
+      display: flex;
+      justify-content: center;
+    }
 
-        &:hover {
-          background-color: #bf2432;
+    &__text {
+      text-align: start;
+      flex: 1;
+
+      h2 {
+        font-size: 2.3rem;
+        margin-bottom: 2rem;
+        color: #2a3f58;
+        border-bottom: 3px solid #bf2432;
+      }
+
+      p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      ul{
+        list-style-type: disc;
+        margin-left: 2rem;
+        font-size: 1.3rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .tarifs-section2__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        button {
+          background-color: #2a3f58;
+          border: 1px solid #fff;
+          padding: 1.3rem 2rem;
+          border-radius: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 500;
+          cursor: pointer;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
+
+          &:hover {
+            background-color: #bf2432;
+            transition: all 0.3s ease;
+          }
         }
       }
     }
 
-    // Desktop
-    @media (min-width: 768px) {
-      flex-direction: row; // texte à gauche, image à droite
-      justify-content: space-between;
-      align-items: center;
+    &__image {
+      flex: 1;
+      text-align: center;
 
-      &__text {
-        flex: 1;
-        text-align: left;
-        padding: 2rem;
-        h2 {
-          font-size: 4rem;
-        }
-        p {
-          font-size: 1.5rem;
-        }
-      }
-
-      &__image {
-        flex: 1;
-      }
-
-      &__buttons {
-        justify-content: flex-start;
+      img {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
       }
     }
   }
 
-  .legal{
+  /* ---------------- ARTISAN ---------------- */
+  .artisan {
     margin: 2rem 0;
+    padding: 2rem 1rem;
     font-size: 1.2rem;
     text-align: center;
-  }
-  
-  .tarifs_info {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-    text-align: center;
-    font-weight: 600;
-  
-    .tarifs1,
-    .tarifs3 {
-      background-color: #bf2432;
-      width: 100%;
-      padding: 4rem;
-      font-size: 2.5rem;
-      color: #fff;
-    }
-  
-    .tarifs2 {
-      background-color: #2a3f58;
-      width: 100%;
-      padding: 4rem;
-      font-size: 2.5rem;
-      color: #fff;
-    }
-  
-    @media (min-width: 768px) {
-      flex-direction: row; 
-    }
+    color: #2a3f58;
   }
 }

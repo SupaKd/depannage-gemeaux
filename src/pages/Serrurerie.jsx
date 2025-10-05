@@ -24,46 +24,59 @@ function Serrurerie() {
         </div>
       </section>{" "}
       <Bando />
+    
       <section className="serrurerie-section1">
-        <div className="serrurerie-section1__text">
-          <h2>Une entreprise artisanale à votre service</h2>
-          <p>
-            Dépannage Gémeaux, c’est avant tout une entreprise artisanale
-            implantée à Guingamp, au cœur des Côtes d’Armor. Serrurier diplômé
-            et répertorié auprès de la Chambre des Métiers et de l’Artisanat de
-            Bretagne, notre intervenant exerce son métier avec passion et
-            professionnalisme depuis 2016. Fort de plusieurs années
-            d’expérience, nous avons officiellement ouvert Dépannage Gémeaux en
-            décembre 2023 pour répondre aux besoins croissants en dépannage en
-            serrurerie et petites interventions électriques.
-          </p>
-          <br />
-          <p>
-            Spécialisés dans le dépannage en serrurerie et les petites
-            interventions électriques, nous sommes à vos côtés 24h/24 et 7j/7
-            pour répondre à vos urgences. Que ce soit pour une porte bloquée,
-            une serrure endommagée, ou une intervention électrique hors tension,
-            nous mettons un point d’honneur à intervenir rapidement, avec
-            professionnalisme et transparence.
-          </p>
-          <div className="serrurerie-section1__buttons">
-            <button>
+        <div className="serrurerie-section1__content">
+          <div className="container serrurerie-section1__wrapper">
+            <div className="serrurerie-section1__text">
+              <h2>Une entreprise artisanale à votre service</h2>
+
+              <p>
+                Dépannage Gémeaux, c’est avant tout une entreprise artisanale
+                implantée à Guingamp, au cœur des Côtes d’Armor. Serrurier
+                diplômé et répertorié auprès de la Chambre des Métiers et de
+                l’Artisanat de Bretagne, notre intervenant exerce son métier
+                avec passion et professionnalisme depuis 2016. Fort de plusieurs
+                années d’expérience, nous avons officiellement ouvert Dépannage
+                Gémeaux en décembre 2023 pour répondre aux besoins croissants en
+                dépannage en serrurerie et petites interventions électriques.
+              </p>
+              <p>
+                Spécialisés dans le dépannage en serrurerie et les petites
+                interventions électriques, nous sommes à vos côtés 24h/24 et
+                7j/7 pour répondre à vos urgences. Que ce soit pour une porte
+                bloquée, une serrure endommagée, ou une intervention électrique
+                hors tension, nous mettons un point d’honneur à intervenir
+                rapidement, avec professionnalisme et transparence.
+              </p>
+
+              <div className="serrurerie-section1__buttons">
+              <button>
               <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
             </button>
             <button>
               <NavLink to="/contact">Contactez-nous</NavLink>
             </button>
+              </div>
+            </div>
+            <div className="serrurerie-section1__image">
+              <img src="tarifs1.jpg" alt="Logo" />
+            </div>
           </div>
-        </div>
-        <div className="serrurerie-section1__image">
-          <img src="tarifs1.jpg" alt="Logo" />
         </div>
       </section>
       <AvisSlider />
+  
+
       <section className="serrurerie-section2">
-        <div className="serrurerie-section2__text">
-          <h2>Des services de serrurerie professionnels et accessibles</h2>
-          <p>
+        <div className="serrurerie-section2__content">
+          <div className="container serrurerie-section2__wrapper">
+            <div className="serrurerie-section2__image">
+              <img src="tarifs2.jpg" alt="Logo" />
+            </div>
+            <div className="serrurerie-section2__text">
+            <h2>Des services de serrurerie professionnels et accessibles</h2>
+            <p>
             Chez Dépannage Gémeaux, nous avons à cœur de proposer un service de
             qualité, accessible à tous. Nos interventions sont non seulement
             rapides, mais aussi <strong>adaptées à votre budget</strong> et à la
@@ -91,19 +104,50 @@ function Serrurerie() {
             conseillons sur les meilleures solutions en fonction de vos besoins
             et de votre budget.
           </p>
-          <div className="serrurerie-section2__buttons">
-            <button>
-              <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
-            </button>
-            <button>
-              <NavLink to="/contact">Contactez-nous</NavLink>
-            </button>
+              <div className="serrurerie-section2__buttons">
+                <button>
+                  <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
+                </button>
+                <button>
+                  <NavLink to="/contact">Contactez-nous</NavLink>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="serrurerie-section2__image">
-          <img src="tarifs2.jpg" alt="Logo" />
-        </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <Faqserrurerie />
       <div className="artisan">
         <p>

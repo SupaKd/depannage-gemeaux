@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Bando from "../components/Bando";
 import AvisSlider from "../components/AvisSlider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faKey, faBolt, faLockOpen } from "@fortawesome/free-solid-svg-icons";
