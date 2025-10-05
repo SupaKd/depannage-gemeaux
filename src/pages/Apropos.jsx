@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import AvisSlider from "../components/AvisSlider";
+import AvisGoogle from "../components/AvisGoogle";
 
 function Apropos() {
   return (
@@ -115,7 +115,7 @@ function Apropos() {
       </section>
 
       <section>
-        <AvisSlider />
+        <AvisGoogle />
       </section>
       <div className="artisan">
         <p>

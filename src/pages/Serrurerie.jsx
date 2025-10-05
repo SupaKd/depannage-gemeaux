@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Bando from "../components/Bando";
-import AvisSlider from "../components/AvisSlider";
 import Faqserrurerie from "../components/Faqserrurerie";
+import AvisGoogle from "../components/AvisGoogle";
 function Serrurerie() {
   return (
     <main className="serrurerie">
@@ -65,7 +65,7 @@ function Serrurerie() {
           </div>
         </div>
       </section>
-      <AvisSlider />
+      <AvisGoogle />
   
 
       <section className="serrurerie-section2">

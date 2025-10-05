@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import AvisSlider from "../components/AvisSlider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faKey, faBolt, faLockOpen } from "@fortawesome/free-solid-svg-icons";
+import AvisGoogle from "../components/AvisGoogle";
 
 function Home() {
   return (
@@ -36,7 +36,7 @@ function Home() {
     </section>
 
   
-      <AvisSlider />
+      <AvisGoogle />
 
       {/* SECTION DEPANNAGE */}
       <section className="heroDepannage">

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import AvisSlider from "../components/AvisSlider";
 import Bando from "../components/Bando";
+import AvisGoogle from "../components/AvisGoogle";
 function Tarifs() {
   return (
     <main className="tarifs">
@@ -140,7 +140,7 @@ function Tarifs() {
         </div>
       </section>
 
-      <AvisSlider />
+      <AvisGoogle />
 
       <p className="artisan">
         Artisan enregistré à la chambre des métiers et de l’artisanat de
