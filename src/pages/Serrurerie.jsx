@@ -106,8 +106,7 @@ function Serrurerie() {
       </section>
       <Faqserrurerie />
       <div className="artisan">
-
-      <p>
+        <p>
           Artisan enregistré à la chambre des métiers et de l’artisanat de
           Bretagne. Fournitures et main d’œuvre garanties 10 ans.
         </p>
