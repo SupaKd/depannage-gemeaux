@@ -1,22 +1,30 @@
 header {
-  position: relative;
-  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: #2a3f58 3px solid;
+
+  
 
   .logo_mobile {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top:2rem;
+    margin-top: 1rem;
     img {
       width: 120px;
     }
-    p{
+    p {
       font-size: 0.8rem;
       text-align: center;
-      color: #2A3F58;
+      color: #2a3f58;
+      margin-bottom: 1rem;
     }
   }
 
@@ -24,15 +32,15 @@ header {
     background: none;
     border: none;
     font-size: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     cursor: pointer;
     transition: transform 0.3s ease;
-    color:#2A3F58;
+    color: #2a3f58;
   }
 
   .appel {
     background: #fff;
-    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
     font-weight: bold;
   }
   .header__button {
@@ -69,7 +77,7 @@ header {
       border: none;
       font-size: 2rem;
       cursor: pointer;
-      color: #2A3F58;
+      color: #2a3f58;
     }
 
     &.show {
@@ -81,24 +89,24 @@ header {
       width: 200px;
     }
     .header__btn {
-      background: #BF2432;
-      color:#fff;
+      background: #bf2432;
+      color: #fff;
       font-size: 1.5rem;
       border: none;
       border-radius: 5px;
       padding: 1rem 1.3rem;
       text-decoration: none;
 
-    &:hover {
-      background: none;
-      color: #2A3F58;
-      transform: none;
-    }
+      &:hover {
+        background: none;
+        color: #2a3f58;
+        transform: none;
+      }
     }
     a {
       position: relative;
       text-decoration: none;
-      color: #2A3F58;
+      color: #2a3f58;
       font-size: 2rem;
       font-weight: 500;
       padding-bottom: 2px;
@@ -111,12 +119,12 @@ header {
         bottom: 0;
         width: 0%;
         height: 2px;
-        background: #2A3F58;
+        background: #2a3f58;
         transition: width 0.3s ease;
       }
 
       &:hover {
-        color: #2A3F58;
+        color: #2a3f58;
 
         &::after {
           width: 100%;
@@ -136,11 +144,12 @@ header {
   }
 
   .tel_header {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    color: #2A3F58;
-    margin-top: 1.3rem;
-    color:#BF2432;
+    color: #2a3f58;
+    margin: 1rem;
+    
+    color: #bf2432;
   }
 
   // ===== Desktop =====
@@ -153,10 +162,10 @@ header {
       img {
         width: 150px;
       }
-      p{
+      p {
         font-size: 1rem;
         text-align: center;
-        color: #2A3F58;
+        color: #2a3f58;
       }
     }
 
@@ -181,7 +190,7 @@ header {
         display: none;
       }
       a {
-        color: #2A3F58;
+        color: #2a3f58;
         font-weight: 500;
         font-size: 1.5rem;
         text-decoration: none;
@@ -196,12 +205,12 @@ header {
           bottom: 0;
           width: 0%;
           height: 2px;
-          background: #2A3F58;
+          background: #2a3f58;
           transition: width 0.3s ease;
         }
 
         &:hover {
-          color: #2A3F58;
+          color: #2a3f58;
 
           &::after {
             width: 100%;
@@ -209,7 +218,7 @@ header {
         }
 
         &.active {
-          color: #BF2432;
+          color: #bf2432;
 
           &::after {
             width: 100%; // toujours souligné si actif

@@ -54,13 +54,22 @@ function Apropos() {
               <h2>Une entreprise artisanale à votre service</h2>
               <p>
                 Dépannage Gémeaux, c’est avant tout une entreprise artisanale
-                implantée à Guingamp, au cœur des Côtes d’Armor...
+                implantée à Guingamp, au cœur des Côtes d’Armor. Serrurier
+                diplômé et répertorié auprès de la Chambre des Métiers et de
+                l’Artisanat de Bretagne, notre intervenant exerce son métier
+                avec passion et professionnalisme depuis 2016. Fort de plusieurs
+                années d’expérience, nous avons officiellement ouvert Dépannage
+                Gémeaux en décembre 2023 pour répondre aux besoins croissants en
+                dépannage en serrurerie et petites interventions électriques.
               </p>
               <br />
               <p>
                 Spécialisés dans le dépannage en serrurerie et les petites
                 interventions électriques, nous sommes à vos côtés 24h/24 et
-                7j/7 pour répondre à vos urgences...
+                7j/7 pour répondre à vos urgences. Que ce soit pour une porte
+                bloquée, une serrure endommagée, ou une intervention électrique
+                hors tension, nous mettons un point d’honneur à intervenir
+                rapidement, avec professionnalisme et transparence.
               </p>
               <div className="apropos-section1__buttons">
                 <button>
@@ -87,6 +96,38 @@ function Apropos() {
       >
         <div className="apropos-section2__content">
           <div className="container apropos-section2__wrapper">
+            
+            <div className="apropos-section2__text">
+              <h2>Des services sur mesure dans l’ouest des Côtes d’Armor</h2>
+              <p>
+                Nous couvrons principalement la moitié ouest des Côtes d’Armor,
+                avec des interventions dans des villes comme Guingamp,
+                Saint-Brieuc, Lannion, Morlaix, Callac et Paimpol. Notre
+                engagement est de fournir des prestations de qualité, à des
+                tarifs compétitifs, tout en assurant la sécurité et la
+                satisfaction de nos clients. Grâce à notre expertise, nous
+                sommes en mesure de vous conseiller sur les meilleures options
+                pour sécuriser vos accès ou pour résoudre vos problèmes
+                électriques.
+              </p>
+              <br />
+              <p>
+                Chez Dépannage Gémeaux, nous plaçons la satisfaction de nos
+                clients au cœur de notre démarche. Chaque intervention est
+                réalisée avec minutie et dans le respect des normes en vigueur.
+                Vous avez une question ou besoin d’un conseil ? Notre équipe est
+                à votre écoute pour vous accompagner et vous offrir la
+                tranquillité d’esprit que vous méritez.
+              </p>
+              <div className="apropos-section2__buttons">
+                <button>
+                  <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
+                </button>
+                <button>
+                  <NavLink to="/contact">Contactez-nous</NavLink>
+                </button>
+              </div>
+            </div>
             <div className="apropos-section2__image">
               <iframe
                 title="Carte Côtes-d’Armor"
@@ -99,30 +140,10 @@ function Apropos() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div className="apropos-section2__text">
-              <h2>Des services sur mesure dans l’ouest des Côtes d’Armor</h2>
-              <p>
-                Nous couvrons principalement la moitié ouest des Côtes
-                d’Armor...
-              </p>
-              <br />
-              <p>
-                Chez Dépannage Gémeaux, nous plaçons la satisfaction de nos
-                clients au cœur de notre démarche...
-              </p>
-              <div className="apropos-section2__buttons">
-                <button>
-                  <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
-                </button>
-                <button>
-                  <NavLink to="/contact">Contactez-nous</NavLink>
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </motion.section>
-
+      
       <AvisGoogle />
 
       <div className="artisan">

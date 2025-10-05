@@ -126,19 +126,35 @@ function Home() {
         <div className="home-section1__content">
           <div className="container home-section1__wrapper">
             <div className="home-section1__text">
-              <h2>Un service de home disponible 24h/24 et 7j/7</h2>
+              <h2>Un service de serrurerie disponible 24h/24 et 7j/7</h2>
               <p>
-                En plus de nos <strong>services de serrurerie</strong>,
-                Dépannage Gémeaux propose également des prestations en{" "}
-                <strong>électricité générale</strong>.
+                Chez Dépannage Gémeaux, la sécurité de votre domicile est notre
+                priorité. <strong>Serrurier expérimenté</strong>, nous
+                intervenons rapidement à<strong> Guingamp</strong> et dans les
+                villes voisines telles que <strong>Lannion</strong>,
+                <strong>Saint-Brieuc</strong>, <strong>Paimpol</strong>,{" "}
+                <strong>Morlaix</strong> et <strong>Callac</strong>. Que vous
+                soyez confronté à une porte claquée, une serrure endommagée ou
+                une effraction, nous assurons un service d’urgence 24h/24, 7
+                jours sur 7, afin de sécuriser vos accès en un temps record.
               </p>
+              <br />
               <p>
-                Notre équipe est formée pour intervenir rapidement sur tout type
-                de <strong>dépannage électrique</strong>.
+                Nous nous engageons à vous offrir des solutions adaptées à vos
+                besoins, qu’il s’agisse de l’ouverture de porte, du remplacement
+                de serrure ou de l’installation de dispositifs de sécurité
+                renforcés. Grâce à notre expertise et à notre{" "}
+                <strong>proximité</strong>, nous sommes votre interlocuteur
+                privilégié en cas d’urgence.
               </p>
+              <br />
               <p>
-                Nous vous conseillons dans vos projets électriques, pour des
-                installations neuves ou rénovations.
+                Nous comprenons que chaque situation est unique et que les
+                besoins peuvent varier. C’est pourquoi nous vous proposons des
+                <strong> tarifs transparents</strong>, ajustés selon la
+                complexité de l’intervention et votre localisation géographique.
+                Vous êtes assuré de recevoir un service de qualité, au meilleur
+                coût possible, sans mauvaise surprise.
               </p>
               <div className="home-section1__buttons">
                 <button>
@@ -166,20 +182,33 @@ function Home() {
       >
         <div className="home-section2__content">
           <div className="container home-section2__wrapper">
-            <div className="home-section2__image">
-              <img src="tarifs1.jpg" alt="Logo" />
-            </div>
+            
             <div className="home-section2__text">
               <h2>Électricité générale et dépannage d’urgence</h2>
               <p>
-                Chez Dépannage Gémeaux, la sécurité de votre domicile est notre
-                priorité. <strong>Serrurier expérimenté</strong> à Guingamp et
-                alentours.
+                En plus de nos <strong>services de serrurerie</strong>, Dépannage Gémeaux propose
+                également des prestations en <strong>électricité générale</strong>. Que ce soit
+                pour une panne électrique, une intervention sur vos
+                installations ou une mise en sécurité de votre domicile, nous
+                sommes à votre disposition jour et nuit pour répondre à vos
+                besoins urgents.
               </p>
+              <br />
               <p>
-                Nous offrons des <strong>solutions rapides et adaptées</strong>.
+                Notre équipe est formée pour intervenir rapidement sur tout type
+                de <strong>dépannage électrique</strong>, vous garantissant un retour à la
+                normale en toute sécurité. Nos prestations couvrent aussi bien
+                les installations résidentielles que commerciales, avec la même
+                exigence de qualité et de rapidité.
               </p>
-              <p>Tarifs transparents et interventions locales.</p>
+              <br />
+              <p>
+                Au-delà des <strong>dépannages d’urgence</strong>, nous vous conseillons dans vos
+                projets électriques, que ce soit pour des installations neuves,
+                des rénovations ou des mises aux normes. Nous nous adaptons à
+                vos besoins spécifiques pour vous offrir des solutions durables
+                et conformes aux dernières réglementations en vigueur.
+              </p>
               <div className="home-section2__buttons">
                 <button>
                   <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
@@ -188,6 +217,9 @@ function Home() {
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>
+            </div>
+            <div className="home-section2__image">
+              <img src="tarifs1.jpg" alt="Logo" />
             </div>
           </div>
         </div>

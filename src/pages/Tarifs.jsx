@@ -100,9 +100,7 @@ function Tarifs() {
       >
         <div className="tarifs-section2__content">
           <div className="container tarifs-section2__wrapper">
-            <div className="tarifs-section2__image">
-              <img src="tarifs2.jpg" alt="Logo" />
-            </div>
+            
             <div className="tarifs-section2__text">
               <h2>Produits et prestations complémentaires</h2>
               <p>
@@ -159,6 +157,9 @@ function Tarifs() {
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>
+            </div>
+            <div className="tarifs-section2__image">
+              <img src="tarifs2.jpg" alt="Logo" />
             </div>
           </div>
         </div>

@@ -125,10 +125,12 @@ function Contact() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>{" "}
-        <p>
-          Artisan enregistré à la chambre des métiers et de l’artisanat de
-          Bretagne. Fournitures et main d’œuvre garanties 10 ans.
-        </p>
+        <div>
+          <p className="artisan">
+            Artisan enregistré à la chambre des métiers et de l’artisanat de
+            Bretagne. Fournitures et main d’œuvre garanties 10 ans.
+          </p>
+        </div>
       </section>
     </main>
   );
