@@ -1,31 +1,63 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import Bando from "../components/Bando";
 import Faqserrurerie from "../components/Faqserrurerie";
 import AvisGoogle from "../components/AvisGoogle";
 function Serrurerie() {
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
   return (
     <main className="serrurerie">
-      <section className="serrurerie__hero">
-        <h1 className="serrurerie__title">Dépannage serrurerie</h1>
-        <p className="serrurerie__description">
+       <section className="serrurerie__hero">
+        <motion.h1
+          className="serrurerie__title"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          Dépannage serrurerie
+        </motion.h1>
+        <motion.p
+          className="serrurerie__description"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           Intervention rapide et sécurisée pour tous vos problèmes de serrurerie
           à Guingamp et dans les villes voisines. Que ce soit une porte bloquée
           ou une serrure endommagée, nous sommes là pour vous dépanner à tout
           moment.
-        </p>
-        <div className="serrurerie__buttons">
+        </motion.p>
+        <motion.div
+          className="serrurerie__buttons"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <button className="serrurerie__button">
             <NavLink to="/tarifs">Nos tarifs</NavLink>
           </button>
           <button className="serrurerie__button serrurerie__button--primary">
             <NavLink to="/devis">Votre devis gratuit</NavLink>
           </button>
-        </div>
-      </section>{" "}
+        </motion.div>
+      </section>
       <Bando />
     
-      <section className="serrurerie-section1">
+      <motion.section
+        className="serrurerie-section1"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="serrurerie-section1__content">
           <div className="container serrurerie-section1__wrapper">
             <div className="serrurerie-section1__text">
@@ -64,11 +96,17 @@ function Serrurerie() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
       <AvisGoogle />
   
 
-      <section className="serrurerie-section2">
+      <motion.section
+        className="serrurerie-section2"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="serrurerie-section2__content">
           <div className="container serrurerie-section2__wrapper">
             <div className="serrurerie-section2__image">
@@ -115,7 +153,7 @@ function Serrurerie() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
 
 

@@ -41,6 +41,8 @@ function Header() {
         </button>
 
         <img src="/logo.svg" alt="logo" />
+        <a className="header__btn" href="tel:+33769697279">
+        Appel dépannage</a>
         <NavLink
           to="/"
           onClick={closeMenu}

@@ -4,8 +4,8 @@
   text-align: center;
 
   &__logo img {
-    width: 150px;
-    margin: 0 auto 1.5rem;
+    width: 200px;
+    margin: 2rem;
   }
 
   &__links {
@@ -22,11 +22,14 @@
       & .footer__title {
         font-size: 2rem;
         font-weight: bold;
+        border-bottom: solid 2px #bf2432;
+        padding-bottom: 0.5rem;
         margin-bottom: 0.5rem;
         color: #2a3f58;
       }
 
-      & .footer__link,a {
+      & .footer__link,
+      a {
         position: relative;
         text-decoration: none;
         color: #2a3f58;
@@ -53,7 +56,7 @@
 
       & .footer__text {
         font-size: 1.2rem;
-        color: #2a3f58
+        color: #2a3f58;
       }
     }
   }
@@ -79,7 +82,7 @@
   @media (min-width: 768px) {
     text-align: center;
     padding: 3rem 2rem;
-    
+
     &__links {
       flex-direction: row;
       justify-content: space-between;

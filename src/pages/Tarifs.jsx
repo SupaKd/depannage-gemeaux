@@ -1,39 +1,69 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import Bando from "../components/Bando";
 import AvisGoogle from "../components/AvisGoogle";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
 function Tarifs() {
   return (
     <main className="tarifs">
+      {/* HERO SECTION */}
       <section className="hero_tarifs">
-        <h1>Tarifs des interventions de dépannage</h1>
-        <p>
+        <motion.h1
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          Tarifs des interventions de dépannage
+        </motion.h1>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           Des tarifs clairs et adaptés à vos besoins, que ce soit pour une
           urgence en serrurerie ou un dépannage électrique. Chaque intervention
           est réalisée avec soin, transparence et au meilleur prix, selon votre
           localisation dans les Côtes d’Armor.
-        </p>
-        <div className="hero_buttons">
+        </motion.p>
+        <motion.div
+          className="hero_buttons"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <button>
             <NavLink to="/#">Les forfaits</NavLink>
           </button>
           <button>
             <NavLink to="/#">Prestation complémentaires</NavLink>
           </button>
-        </div>
+        </motion.div>
       </section>
 
-      <section className="tarifs-section1">
+      <Bando />
+      <motion.section
+        className="tarifs-section1"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="tarifs-section1__content">
           <div className="container tarifs-section1__wrapper">
             <div className="tarifs-section1__text">
               <h2>Nos forfaits de dépannage</h2>
               <p>
                 Nous proposons des forfaits adaptés à chaque type
-                d’intervention, en serrurerie comme en électricité. Nos tarifs
-                varient en fonction du type de dépannage et de la distance
-                parcourue depuis notre siège à Guingamp.
+                d’intervention, en serrurerie comme en électricité...
               </p>
-
               <p>
                 <strong>
                   Dépannage standard (jusqu’à 1h d’intervention) :
@@ -59,13 +89,15 @@ function Tarifs() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <Bando />
-
-   
-
-      <section className="tarifs-section2">
+      <motion.section
+        className="tarifs-section2"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="tarifs-section2__content">
           <div className="container tarifs-section2__wrapper">
             <div className="tarifs-section2__image">
@@ -91,29 +123,21 @@ function Tarifs() {
                 <strong>Ouvertures de coffres :</strong>
               </p>
               <ul>
-                <li>
-                  Tarifs entre 500€ et 2 000€ selon le modèle (ouverture par
-                  effraction et neutralisation complète du système d’ouverture,
-                  inutilisable par la suite; évacuation non incluse).
-                </li>
+                <li>Tarifs entre 500€ et 2 000€ selon le modèle...</li>
               </ul>
               <p>
                 <strong>Remise des clés :</strong>
               </p>
               <ul>
                 <li>
-                  La remise des clés est conditionnée au règlement complet de la
-                  prestation.
+                  La remise des clés est conditionnée au règlement complet...
                 </li>
               </ul>
               <p>
                 <strong>Frais de déplacement professionnels :</strong>
               </p>
               <ul>
-                <li>
-                  4€ par kilomètre (calculé entre le siège social et le lieu
-                  d’intervention).
-                </li>
+                <li>4€ par kilomètre...</li>
               </ul>
               <p>
                 <strong>Déplacements supplémentaires :</strong>
@@ -138,7 +162,7 @@ function Tarifs() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <AvisGoogle />
 

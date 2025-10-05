@@ -35,6 +35,12 @@ header {
     padding: 0.8rem 1rem;
     font-weight: bold;
   }
+  .header__button {
+    background: #fff;
+    padding: 0.8rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
   // Navigation mobile
   .header__nav {
@@ -74,11 +80,26 @@ header {
     img {
       width: 200px;
     }
+    .header__btn {
+      background: #BF2432;
+      color:#fff;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 5px;
+      padding: 1rem 1.3rem;
+      text-decoration: none;
+
+    &:hover {
+      background: none;
+      color: #2A3F58;
+      transform: none;
+    }
+    }
     a {
       position: relative;
       text-decoration: none;
       color: #2A3F58;
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-weight: 500;
       padding-bottom: 2px;
       transition: color 0.3s ease;
@@ -162,7 +183,7 @@ header {
       a {
         color: #2A3F58;
         font-weight: 500;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         text-decoration: none;
         position: relative;
         padding-bottom: 2px;
@@ -180,7 +201,7 @@ header {
         }
 
         &:hover {
-          color: #000;
+          color: #2A3F58;
 
           &::after {
             width: 100%;

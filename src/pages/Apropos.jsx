@@ -1,25 +1,50 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import AvisGoogle from "../components/AvisGoogle";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
 
 function Apropos() {
   return (
     <main className="apropos">
+      {/* HERO SECTION */}
       <section className="apropos__hero">
-        <h1 className="apropos__title">Qui sommes-nous ?</h1>
-        <p className="apropos__description">
+        <motion.h1
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          Qui sommes-nous ?
+        </motion.h1>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           Artisan local à votre service 24h/24, Dépannage Gémeaux intervient
           rapidement pour toutes vos urgences en serrurerie et électricité. Nous
           offrons des solutions sur mesure, adaptées à vos besoins, avec
           professionnalisme et proximité dans les Côtes d’Armor.
-        </p>
-        <div className="apropos__buttons">
+        </motion.p>
+        <motion.div
+          className="apropos__buttons"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <button className="apropos__button">
             <NavLink to="/tarifs">Nos tarifs</NavLink>
           </button>
           <button className="apropos__button apropos__button--primary">
             <NavLink to="/devis">Votre devis gratuit</NavLink>
           </button>
-        </div>
+        </motion.div>
       </section>
 
       <section className="apropos-section1">
@@ -29,22 +54,13 @@ function Apropos() {
               <h2>Une entreprise artisanale à votre service</h2>
               <p>
                 Dépannage Gémeaux, c’est avant tout une entreprise artisanale
-                implantée à Guingamp, au cœur des Côtes d’Armor. Serrurier
-                diplômé et répertorié auprès de la Chambre des Métiers et de
-                l’Artisanat de Bretagne, notre intervenant exerce son métier
-                avec passion et professionnalisme depuis 2016. Fort de plusieurs
-                années d’expérience, nous avons officiellement ouvert Dépannage
-                Gémeaux en décembre 2023 pour répondre aux besoins croissants en
-                dépannage en serrurerie et petites interventions électriques.
+                implantée à Guingamp, au cœur des Côtes d’Armor...
               </p>
               <br />
               <p>
                 Spécialisés dans le dépannage en serrurerie et les petites
                 interventions électriques, nous sommes à vos côtés 24h/24 et
-                7j/7 pour répondre à vos urgences. Que ce soit pour une porte
-                bloquée, une serrure endommagée, ou une intervention électrique
-                hors tension, nous mettons un point d’honneur à intervenir
-                rapidement, avec professionnalisme et transparence.
+                7j/7 pour répondre à vos urgences...
               </p>
               <div className="apropos-section1__buttons">
                 <button>
@@ -62,9 +78,13 @@ function Apropos() {
         </div>
       </section>
 
-      
-
-      <section className="apropos-section2">
+      <motion.section
+        className="apropos-section2"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="apropos-section2__content">
           <div className="container apropos-section2__wrapper">
             <div className="apropos-section2__image">
@@ -77,29 +97,18 @@ function Apropos() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>{" "}
+              ></iframe>
             </div>
             <div className="apropos-section2__text">
               <h2>Des services sur mesure dans l’ouest des Côtes d’Armor</h2>
               <p>
-                Nous couvrons principalement la moitié ouest des Côtes d’Armor,
-                avec des interventions dans des villes comme Guingamp,
-                Saint-Brieuc, Lannion, Morlaix, Callac et Paimpol. Notre
-                engagement est de fournir des prestations de qualité, à des
-                tarifs compétitifs, tout en assurant la sécurité et la
-                satisfaction de nos clients. Grâce à notre expertise, nous
-                sommes en mesure de vous conseiller sur les meilleures options
-                pour sécuriser vos accès ou pour résoudre vos problèmes
-                électriques.
+                Nous couvrons principalement la moitié ouest des Côtes
+                d’Armor...
               </p>
               <br />
               <p>
                 Chez Dépannage Gémeaux, nous plaçons la satisfaction de nos
-                clients au cœur de notre démarche. Chaque intervention est
-                réalisée avec minutie et dans le respect des normes en vigueur.
-                Vous avez une question ou besoin d’un conseil ? Notre équipe est
-                à votre écoute pour vous accompagner et vous offrir la
-                tranquillité d’esprit que vous méritez.
+                clients au cœur de notre démarche...
               </p>
               <div className="apropos-section2__buttons">
                 <button>
@@ -112,11 +121,10 @@ function Apropos() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section>
-        <AvisGoogle />
-      </section>
+      <AvisGoogle />
+
       <div className="artisan">
         <p>
           Artisan enregistré à la chambre des métiers et de l’artisanat de

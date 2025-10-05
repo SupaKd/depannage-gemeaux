@@ -1,24 +1,53 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import Bando from "../components/Bando";
 function Contact() {
+  const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
     <main className="contact">
       {/* HERO SECTION */}
       <section className="hero_contact">
-        <h1>Nous contacter</h1>
-        <p>
+        <motion.h1
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          Nous contacter
+        </motion.h1>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           Besoin d’un dépannage en urgence ou d’un renseignement ? Nous sommes à
           votre disposition 24h/24 et 7j/7 pour intervenir rapidement à Guingamp
           et dans l’ouest des Côtes d’Armor.
-        </p>
-        <div className="hero_buttons">
+        </motion.p>
+        <motion.div
+          className="hero_buttons"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {" "}
           <button>
             <NavLink to="/tarifs">Nos tarifs</NavLink>
           </button>
           <button>
             <NavLink to="/devis">Votre devis gratuit</NavLink>
           </button>
-        </div>
+        </motion.div>
       </section>
 
       <Bando />
