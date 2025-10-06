@@ -19,7 +19,7 @@ function Home() {
     <main className="home">
       {/* HERO SECTION */}
       <section className="home__hero">
-        <div className="container">
+        <div className="home__container">
           <motion.h1
             className="home__title"
             variants={fadeUp}

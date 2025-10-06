@@ -3,7 +3,6 @@
   .hero_tarifs {
     text-align: center;
     padding: 4rem 1rem;
-    margin-top: 1rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("/tarifs.jpg");
     background-size: cover;
@@ -42,7 +41,7 @@
       button {
           background-color: #2a3f58;
           border: 1px solid #fff;
-          padding: 1.5rem 3rem;
+          padding: 1.3rem 1.5rem;
           border-radius: 0.5rem;
           cursor: pointer;
 
