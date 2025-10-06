@@ -44,7 +44,7 @@ function Contact() {
           <button>
             <NavLink to="/tarifs">Nos tarifs</NavLink>
           </button>
-          <button>
+          <button className="contact__redbtn">
             <NavLink to="/devis">Votre devis gratuit</NavLink>
           </button>
         </motion.div>

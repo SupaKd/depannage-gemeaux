@@ -47,7 +47,7 @@ function Serrurerie() {
           <button className="serrurerie__button">
             <NavLink to="/tarifs">Nos tarifs</NavLink>
           </button>
-          <button className="serrurerie__button serrurerie__button--primary">
+          <button className="serrurerie__redbtn">
             <NavLink to="/devis">Votre devis gratuit</NavLink>
           </button>
         </motion.div>
@@ -99,10 +99,10 @@ function Serrurerie() {
               </p>
 
               <div className="serrurerie-section1__buttons">
-                <button>
+                <button >
                   <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
                 </button>
-                <button>
+                <button className="serrurerie__redbtn">
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>
@@ -162,7 +162,7 @@ function Serrurerie() {
                 <button>
                   <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
                 </button>
-                <button>
+                <button className="serrurerie__redbtn">
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>

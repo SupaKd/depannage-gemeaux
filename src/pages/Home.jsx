@@ -52,7 +52,7 @@ function Home() {
             <button className="home__button">
               <NavLink to="/serrurerie">Serrurerie</NavLink>
             </button>
-            <button className="home__button home__button--primary">
+            <button className="home__redbtn">
               <NavLink to="/electricite">Électricité</NavLink>
             </button>
           </motion.div>
@@ -160,7 +160,7 @@ function Home() {
                 <button>
                   <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
                 </button>
-                <button>
+                <button className="home__redbtn">
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>
@@ -213,7 +213,7 @@ function Home() {
                 <button>
                   <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
                 </button>
-                <button>
+                <button className="home__redbtn"> 
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>

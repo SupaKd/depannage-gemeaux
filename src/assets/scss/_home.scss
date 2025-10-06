@@ -10,7 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    min-height: 60vh;
+    height:90vh ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +44,10 @@
       gap: 1rem;
       margin-top: 2rem;
 
+      .home__redbtn{
+        background-color: #bf2432;
+      }
+
       button {
         background-color: #2a3f58;
         border: 1px solid #fff;
@@ -60,7 +64,7 @@
         }
 
         &:hover {
-          background-color: #bf2432;
+          background-color: #495057;
           transition: all 0.3s ease;
         }
       }
@@ -68,12 +72,12 @@
 
     @media (min-width: 768px) {
       h1 {
-        font-size: 5rem;
+        font-size: 7rem;
       }
 
       p {
-        font-size: 1.6rem;
-        max-width: 700px;
+        font-size: 1.8rem;
+        max-width: 900px;
       }
     }
   }
@@ -171,7 +175,7 @@
   /* ---------------- SECTION 1 ---------------- */
   
   .home-section1 {
-    padding: 0rem 2rem;
+    padding: 0rem 2rem 0rem 2rem;
     background-color: #fff;
 
     &__wrapper {
@@ -223,6 +227,10 @@
           justify-content: start;
         }
 
+        .home__redbtn {
+          background-color: #bf2432;
+        }
+
         button {
           background-color: #2a3f58;
           border: 1px solid #fff;
@@ -237,7 +245,7 @@
           }
 
           &:hover {
-            background-color: #bf2432;
+            background-color: #495057;
             transition: all 0.3s ease;
           }
         }
@@ -259,7 +267,7 @@
 
   /* ---------------- SECTION 2 ---------------- */
   .home-section2 {
-    padding: 0rem 2rem;
+    padding: 0rem 2rem 0rem 2rem;
     background-color: #fff;
 
     &__wrapper {
@@ -311,6 +319,10 @@
           justify-content: start;
         }
 
+        .home__redbtn {
+          background-color: #bf2432;
+        }
+
         button {
           background-color: #2a3f58;
           border: 1px solid #fff;
@@ -326,7 +338,7 @@
           }
 
           &:hover {
-            background-color: #bf2432;
+            background-color: #495057;
             transition: all 0.3s ease;
           }
         }

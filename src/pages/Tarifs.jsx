@@ -42,7 +42,7 @@ function Tarifs() {
           <button>
             <NavLink to="/#">Les forfaits</NavLink>
           </button>
-          <button>
+          <button className="tarif__redbtn">
             <NavLink to="/#">Prestation complémentaires</NavLink>
           </button>
         </motion.div>
@@ -79,7 +79,7 @@ function Tarifs() {
                 <button>
                   <NavLink to="/serrurerie">En savoir plus</NavLink>
                 </button>
-                <button>
+                <button className="tarif__redbtn"> 
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>
@@ -153,7 +153,7 @@ function Tarifs() {
                 <button>
                   <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
                 </button>
-                <button>
+                <button className="tarif__redbtn">
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>
