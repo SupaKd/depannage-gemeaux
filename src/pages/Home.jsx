@@ -166,7 +166,7 @@ function Home() {
               </div>
             </div>
             <div className="home-section1__image">
-              <img src="tarifs1.jpg" alt="Logo" />
+              <img src="keys.jpg" alt="Logo" />
             </div>
           </div>
         </div>
@@ -219,7 +219,7 @@ function Home() {
               </div>
             </div>
             <div className="home-section2__image">
-              <img src="tarifs1.jpg" alt="Logo" />
+              <img src="electricien.jpg" alt="Logo" />
             </div>
           </div>
         </div>
