@@ -70,10 +70,17 @@ function Tarifs() {
                 </strong>
               </p>
               <ul>
-                <li>Secteur Guingamp : 100€</li>
-                <li>Jusqu’à 20 km : 130€</li>
-                <li>20 à 40 km : 160€</li>
-                <li>40 à 60 km : 210€</li>
+                <li>Intervention Guingamp : 100.00€</li>
+                <li>Intervention jusqu'à 20 km : 130.00€.</li>
+                <li>Intervention jusqu'à 30 km : 190.00€.</li>
+                <li>Intervention jusqu'à 40 km : 220.00€.</li>
+                <li>Intervention jusqu'à 50 km : 250.00€.</li>
+                <li>Intervention jusqu'à 60 km : 280.00€.</li>
+                <li>Majoration 50% hors jour ouvré ou plage horaire standard (09/19h).</li>
+
+
+
+               
               </ul>
               <div className="tarifs-section1__buttons">
                 <button>

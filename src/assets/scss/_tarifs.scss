@@ -9,7 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    height:90vh ;
+    height:100vh ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,8 +72,8 @@
   }
 
   .tarifs-section1 {
-    padding: 0rem 2rem;
-    background-color: #fff;
+    padding: 2rem 2rem 0rem 2rem;
+    margin-top: 2rem;
 
     &__wrapper {
       display: flex;
@@ -120,6 +120,10 @@
         font-size: 1.4rem;
         line-height: 1.6;
         margin-bottom: 1rem;
+        li{
+          padding: 0.8rem 0;
+
+        }
       }
 
       .tarifs-section1__buttons {
@@ -174,8 +178,8 @@
 
   /* ---------------- SECTION 2 ---------------- */
   .tarifs-section2 {
-    padding: 0rem 2rem;
-    background-color: #fff;
+    padding: 2rem 2rem 0rem 2rem;
+    margin-top: 2rem;
 
     &__wrapper {
       display: flex;

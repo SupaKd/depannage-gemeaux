@@ -9,7 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
-    height:90vh ;
+    height:100vh ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,8 +118,8 @@
   }
 
   .apropos-section1 {
-    background-color: #fff;
-    padding:0rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
+    margin-top: 2rem;
 
     &__wrapper {
       display: flex;
@@ -213,8 +213,8 @@
     }
   }
   .apropos-section2 {
-    padding: 0rem 2rem;
-    background-color: #fff;
+    padding: 2rem 2rem 0rem 2rem;
+    margin-top: 2rem;
 
     &__wrapper {
       display: flex;

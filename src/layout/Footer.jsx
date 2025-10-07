@@ -71,10 +71,10 @@ function Footer() {
           >
             Mentions légales
           </NavLink>
-          <a href="https://depannage-gemeaux.fr/wp-content/uploads/2025/03/CGV-2.pdf">
+          <a href="cgv.pdf">
             Conditions générales de vente
           </a>
-          <p className="footer__text">SIREN : 983 743 270</p>
+          <p className="footer__text">SIREN : <strong>983 743 270</strong></p>
           <p className="footer__text">Gérer mes cookies</p>
         </div>
       </div>
