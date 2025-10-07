@@ -82,7 +82,7 @@ function Electricite() {
                 service sécurisé et conforme aux réglementations en vigueur.
                 Grâce à notre proximité, nous assurons des interventions rapides
                 à Guingamp et dans les villes voisines comme{" "}
-                <strong>Saint-Brieuc</strong>,<strong>Paimpol</strong>, et{" "}
+                <strong>Saint-Brieuc</strong>,<strong> Paimpol</strong> et{" "}
                 <strong>Callac</strong>.
               </p>
               <br />
@@ -111,6 +111,12 @@ function Electricite() {
           </div>
         </div>
       </motion.section>
+      <div className="artisan">
+        <p>
+          Artisan enregistré à la chambre des métiers et de l’artisanat de
+          Bretagne. Fournitures et main d’œuvre garanties 10 ans.
+        </p>
+      </div>
     </main>
   );
 }
