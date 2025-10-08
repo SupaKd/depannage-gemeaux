@@ -1,5 +1,5 @@
 // src/layout/Header.jsx
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,22 +9,29 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prev) => !prev);
-  const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
+  const closeMenu = useCallback(() => {
+    setIsMenuOpen(false);
+    if (window.scrollY > 0) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, []);
 
   return (
     <header>
       {/* Burger button */}
       <button
-        className={`burger ${isOpen ? "open" : ""}`}
+        className={`burger ${isMenuOpen ? "open" : ""}`}
         onClick={toggleMenu}
         aria-label="Menu mobile"
-        aria-expanded={isOpen}
+        aria-expanded={isMenuOpen}
       >
-        <FontAwesomeIcon icon={isOpen ? faXmark : faBarsStaggered} />
+        <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBarsStaggered} />
       </button>
+
       {/* Logo */}
       <Link to="/" onClick={closeMenu} className="logo_mobile">
         <img src="/logo.svg" alt="Logo" />
@@ -33,9 +40,9 @@ function Header() {
       <Link to="/" onClick={closeMenu} className="logo_desktop">
         <img src="/logo.svg" alt="Logo" />
       </Link>
+
       {/* Navigation */}
-      <nav className={`header__nav ${isOpen ? "show" : ""}`}>
-        {/* Bouton fermer */}
+      <nav className={`header__nav ${isMenuOpen ? "show" : ""}`}>
         <button
           className="close-btn"
           onClick={closeMenu}
@@ -48,56 +55,35 @@ function Header() {
         <a className="header__btn" href="tel:+33769697279">
           Appel dépannage
         </a>
-        <NavLink
-          to="/"
-          onClick={closeMenu}
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
+
+        <NavLink to="/" onClick={closeMenu} className={({ isActive }) => (isActive ? "active" : "")}>
           Accueil
         </NavLink>
-        <NavLink
-          to="/serrurerie"
-          onClick={closeMenu}
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
+        <NavLink to="/serrurerie" onClick={closeMenu} className={({ isActive }) => (isActive ? "active" : "")}>
           Serrurerie
         </NavLink>
-        <NavLink
-          to="/electricite"
-          onClick={closeMenu}
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
+        <NavLink to="/electricite" onClick={closeMenu} className={({ isActive }) => (isActive ? "active" : "")}>
           Électricité
         </NavLink>
-        <NavLink
-          to="/tarifs"
-          onClick={closeMenu}
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
+        <NavLink to="/tarifs" onClick={closeMenu} className={({ isActive }) => (isActive ? "active" : "")}>
           Nos Tarifs
         </NavLink>
-        <NavLink
-          to="/apropos"
-          onClick={closeMenu}
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
+        <NavLink to="/apropos" onClick={closeMenu} className={({ isActive }) => (isActive ? "active" : "")}>
           Qui sommes-nous ?
         </NavLink>
-        <NavLink
-          to="/contact"
-          onClick={closeMenu}
-          className={({ isActive }) => (isActive ? "active" : "")}
-        >
+        <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => (isActive ? "active" : "")}>
           Contact
         </NavLink>
       </nav>
+
       {/* Overlay */}
-      {isOpen && <div className="overlay" onClick={closeMenu}></div>}
+      {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
+
       <div className="tel_header">
         <a href="tel:+33769697279">
           <FontAwesomeIcon icon={faPhoneFlip} />
         </a>
-      </div>{" "}
+      </div>
     </header>
   );
 }
