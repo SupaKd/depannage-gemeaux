@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Bando from "../components/Bando";
 import Faqserrurerie from "../components/Faqserrurerie";
 import AvisGoogle from "../components/AvisGoogle";
+import GoogleReviews from "../components/GoogleReviews";
 function Serrurerie() {
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -114,6 +115,7 @@ function Serrurerie() {
         </div>
       </motion.section>
       <AvisGoogle />
+      <GoogleReviews />
 
       <motion.section
         className="serrurerie-section2"

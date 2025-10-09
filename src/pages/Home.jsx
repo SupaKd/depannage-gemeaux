@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import AvisGoogle from "../components/AvisGoogle";
+import GoogleReviews from "../components/GoogleReviews";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -76,6 +77,8 @@ function Home() {
       <motion.div>
         <AvisGoogle />
       </motion.div>
+      <GoogleReviews />
+
 
       {/* SECTION DEPANNAGE */}
       <motion.section

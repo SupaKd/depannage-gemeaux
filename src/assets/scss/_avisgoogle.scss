@@ -1,5 +1,5 @@
 .avis {
-    padding: 6rem 1.5rem;
+    padding: 6rem 1.5rem 0rem 1.5rem;
     background: #fff;
     text-align: center;
     overflow: hidden;
@@ -46,6 +46,21 @@
   
       @media (min-width: 768px) {
         flex: none;
+      }
+    }
+
+    &__google {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+  
+      img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        object-fit: cover;
       }
     }
   

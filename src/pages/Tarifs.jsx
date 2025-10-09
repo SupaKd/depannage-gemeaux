@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import Bando from "../components/Bando";
 import AvisGoogle from "../components/AvisGoogle";
+import GoogleReviews from "../components/GoogleReviews";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -173,6 +174,7 @@ function Tarifs() {
       </motion.section>
 
       <AvisGoogle />
+      <GoogleReviews />
 
       <p className="artisan">
         Artisan enregistré à la chambre des métiers et de l’artisanat de

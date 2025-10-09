@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import AvisGoogle from "../components/AvisGoogle";
+import GoogleReviews from "../components/GoogleReviews";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -145,6 +146,7 @@ function Apropos() {
       </motion.section>
       
       <AvisGoogle />
+      <GoogleReviews />
 
       <div className="artisan">
         <p>

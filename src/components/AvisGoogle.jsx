@@ -31,6 +31,10 @@ export default function Avis() {
         <div className="avis__list">
           {avis.map((a, i) => (
             <div key={i} className="avis__card">
+              <div className="avis__google">
+
+              <img src="/google.png" alt="google" />
+              </div>
               <div className="avis__stars">
                 {"★".repeat(a.note)}
                 {"☆".repeat(5 - a.note)}
