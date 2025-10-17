@@ -79,7 +79,6 @@ function Home() {
       </motion.div>
       <GoogleReviews />
 
-
       {/* SECTION DEPANNAGE */}
       <motion.section
         className="heroDepannage"
@@ -185,38 +184,23 @@ function Home() {
       >
         <div className="home-section2__content">
           <div className="container home-section2__wrapper">
-            
             <div className="home-section2__text">
-              <h2>Électricité générale et dépannage d’urgence</h2>
-              <p>
-                En plus de nos <strong>services de serrurerie</strong>, Dépannage Gémeaux propose
-                également des prestations en <strong>électricité générale</strong>. Que ce soit
-                pour une panne électrique, une intervention sur vos
-                installations ou une mise en sécurité de votre domicile, nous
-                sommes à votre disposition jour et nuit pour répondre à vos
-                besoins urgents.
-              </p>
-              <br />
+              <h2>Électricité et dépannage d’urgence</h2>
+
               <p>
                 Notre équipe est formée pour intervenir rapidement sur tout type
-                de <strong>dépannage électrique</strong>, vous garantissant un retour à la
-                normale en toute sécurité. Nos prestations couvrent aussi bien
-                les installations résidentielles que commerciales, avec la même
-                exigence de qualité et de rapidité.
+                de dépannage électrique en basse tension et hors maintenance
+                industrielle, vous garantissant un retour à la normale en toute
+                sécurité. Nos prestations couvrent aussi bien les installations
+                résidentielles que commerciales, avec la même exigence de
+                qualité et de rapidité.
               </p>
-              <br />
-              <p>
-                Au-delà des <strong>dépannages d’urgence</strong>, nous vous conseillons dans vos
-                projets électriques, que ce soit pour des installations neuves,
-                des rénovations ou des mises aux normes. Nous nous adaptons à
-                vos besoins spécifiques pour vous offrir des solutions durables
-                et conformes aux dernières réglementations en vigueur.
-              </p>
+
               <div className="home-section2__buttons">
                 <button>
                   <NavLink to="/tarifs">Consultez nos tarifs</NavLink>
                 </button>
-                <button className="home__redbtn"> 
+                <button className="home__redbtn">
                   <NavLink to="/contact">Contactez-nous</NavLink>
                 </button>
               </div>

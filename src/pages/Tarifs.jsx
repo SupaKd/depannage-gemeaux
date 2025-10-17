@@ -117,19 +117,17 @@ function Tarifs() {
               </p>
               <strong>Cylindres :</strong>
               <ul>
-                <li>5G : 40€</li>
-                <li>6G : 60€</li>
-                <li>Renforcé contre l’effraction : 80€</li>
+                <li>5G : 50€ (jusqu’a 85 millimetre)</li>
+                <li>Renforcé contre l’effraction : à partir de 100€</li>
                 <li>
-                  Cylindre de prêt : 20€ (non remboursable, reste la propriété
-                  de l’entreprise).
+                  Cylindre provisoir : 25€.
                 </li>
               </ul>
               <p>
                 <strong>Ouvertures de coffres :</strong>
               </p>
               <ul>
-                <li>Tarifs entre 500€ et 2 000€ selon le modèle...</li>
+                <li>À partir de 300€.</li>
               </ul>
               <p>
                 <strong>Remise des clés :</strong>
@@ -139,9 +137,7 @@ function Tarifs() {
                   La remise des clés est conditionnée au règlement complet...
                 </li>
               </ul>
-              <p>
-                <strong>Frais de déplacement professionnels :</strong>
-              </p>
+              
               <ul>
                 <li>4€ par kilomètre...</li>
               </ul>
@@ -151,9 +147,7 @@ function Tarifs() {
               <ul>
                 <li>1,5€/km routier parcouru</li>
               </ul>
-              <p>
-                <strong>Main d’oeuvre supplémentaire :</strong>
-              </p>
+              
               <ul>
                 <li>70€, 100€ nuit ou week-end, 130€ nuit + week-end</li>
               </ul>
