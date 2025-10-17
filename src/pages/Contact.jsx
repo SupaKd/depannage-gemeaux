@@ -1,7 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import Bando from "../components/Bando";
+
 function Contact() {
+  const formRef = useRef();
+  const [status, setStatus] = useState(null); // "success" ou "error"
+
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     visible: {
@@ -11,9 +17,32 @@ function Contact() {
     },
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setStatus(null);
+
+    emailjs
+      .sendForm(
+        "service_6c8aovk", // ID service EmailJS
+        "template_5qtpejr", // ID template
+        formRef.current,
+        "RBN0iNJ2VLTFcxxox" // clé publique
+      )
+      .then(
+        () => {
+          setStatus("success");
+          e.target.reset();
+        },
+        (error) => {
+          console.error("Erreur :", error.text);
+          setStatus("error");
+        }
+      );
+  };
+
   return (
     <main className="contact">
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section className="hero_contact">
         <motion.h1
           variants={fadeUp}
@@ -40,7 +69,6 @@ function Contact() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {" "}
           <button>
             <NavLink to="/tarifs">Nos tarifs</NavLink>
           </button>
@@ -51,10 +79,12 @@ function Contact() {
       </section>
 
       <Bando />
+
+      {/* FORM */}
       <section className="contact_form">
         <h2>Parlons de votre projet...</h2>
 
-        <form>
+        <form ref={formRef} onSubmit={handleSubmit}>
           <label>
             Nom*
             <input type="text" name="nom" required />
@@ -97,19 +127,27 @@ function Contact() {
 
           <label className="checkbox">
             <input type="checkbox" name="urgent" />
-            L’intervention est-elle urgente ?
+            Intervention urgente ?
           </label>
 
           <label className="checkbox">
-            <input type="checkbox" name="urgent" />
-            En soumettant votre message, vous acceptez que les informations
-            saisies soient exploitées dans le cadre de la demande de devis et de
-            la relation commerciale qui peut en découler.
+            <input type="checkbox" name="consentement" required />
+            J’accepte le traitement de mes données pour la demande.
           </label>
 
           <button type="submit" className="submit_btn">
             Envoyer votre demande
           </button>
+
+          {/* Message de succès / erreur */}
+          {status === "success" && (
+            <p className="form__success">✅ Message envoyé avec succès.</p>
+          )}
+          {status === "error" && (
+            <p className="form__error">
+              ❌ Une erreur est survenue. Veuillez réessayer.
+            </p>
+          )}
         </form>
       </section>
 
@@ -124,7 +162,7 @@ function Contact() {
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>{" "}
+        ></iframe>
         <div>
           <p className="artisan">
             Artisan enregistré à la chambre des métiers et de l’artisanat de
