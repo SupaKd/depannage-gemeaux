@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import Bando from "../components/Bando";
 import AvisGoogle from "../components/AvisGoogle";
-import GoogleReviews from "../components/GoogleReviews";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -117,7 +116,7 @@ function Tarifs() {
               </p>
               <strong>Cylindres :</strong>
               <ul>
-                <li>5G : 50€ (jusqu’a 85 millimetre)</li>
+                <li>5G : 50€ (jusqu’a 85 millimètre)</li>
                 <li>Renforcé contre l’effraction : à partir de 100€</li>
                 <li>
                   Cylindre provisoir : 25€.
@@ -168,7 +167,6 @@ function Tarifs() {
       </motion.section>
 
       <AvisGoogle />
-      <GoogleReviews />
 
       <p className="artisan">
         Artisan enregistré à la chambre des métiers et de l’artisanat de

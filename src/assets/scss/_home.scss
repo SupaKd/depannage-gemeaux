@@ -267,19 +267,21 @@
 
   /* ---------------- SECTION 2 ---------------- */
   .home-section2 {
-    padding: 2rem 2rem 0rem 2rem;
-    margin-top: 2rem;
+    margin: 15rem 2rem 10rem 2rem;
+
 
     &__wrapper {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 2rem;
+      gap:5rem;
 
       @media (min-width: 768px) {
         flex-direction: row-reverse; 
         align-items: center;
         justify-content: center;
+        gap: 20rem;
+
         max-width: 1200px;
       }
     }
@@ -350,7 +352,7 @@
       text-align: center;
 
       img {
-        max-width: 350px;
+        max-width: 370px;
         width: 100%;
         height: auto;
         border-radius: 1rem;

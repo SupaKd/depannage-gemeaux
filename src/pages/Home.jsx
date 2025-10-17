@@ -188,8 +188,8 @@ function Home() {
               <h2>Électricité et dépannage d’urgence</h2>
 
               <p>
-                Notre équipe est formée pour intervenir rapidement sur tout type
-                de dépannage électrique en basse tension et hors maintenance
+                Notre équipe est formée pour intervenir <strong>rapidement</strong> sur tout type
+                de <strong>dépannage électrique</strong> en basse tension et hors maintenance
                 industrielle, vous garantissant un retour à la normale en toute
                 sécurité. Nos prestations couvrent aussi bien les installations
                 résidentielles que commerciales, avec la même exigence de
